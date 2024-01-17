@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                        <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      var renderPage = true;
+  
+      if(navigator.userAgent.indexOf('MSIE')!==-1
+        || navigator.appVersion.indexOf('Trident/') > 0){
+          /* Microsoft Internet Explorer detected in. */
+          alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+          renderPage = false;
+      }
+    </script>
+</head>
+<body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+     <div class="container">
+    
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="logo"><img src="ИТ-сайт материали\New Project.png" width="100px" heigh="100px"></div>
+         <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Начало</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Забележителности
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="Panorama.html">Панорама</a></li>
+                  <li><a class="dropdown-item" href="bojii_Ochi.html">Божиите Очи</a></li>
+                  <li><a class="dropdown-item" href="Sueva_Dupka.html">Съева дупка</a></li>
+                  <li><a class="dropdown-item" href="devetashka_peshera.html">Деветашка пещера</a></li>
+                  <li><a class="dropdown-item" href="krushunski_vodopadi.html">Крушунски водопади</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-hover" href="kontakti.html" >Контаки</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- contact Section -->
+    <section class="row">
+      <div class="col-lg-12 tm-form-header pl-5 pr-5">
+        <h2 class="tm-container-inner tm-text-color-white">Контактна форма</h2>
+      </div>
+      <div class="col-lg-12 pl-2 pl-sm-3 pl-md-5 pr-2 pr-sm-3 pr-md-5">
+        <form action="index.html" method="post" class="row tm-container-inner tm-contact-form">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="form-group">
+              <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Твоето име"  required/>
+            </div>
+            <div class="form-group">
+              <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Твоят Email"  required/>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-6">
+                  <label>
+                    <input type="radio" name="gender" value="m" required> Мъж
+                  </label>
+                </div>
+                <div class="col-lg-6">
+                  <label>
+                    <input type="radio" name="gender" value="f" required> Жена
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea id="contact_message" name="contact_message" class="form-control" rows="6" placeholder="Съобщение" required></textarea>
+            </div>
+          </div>
+          <div class="col-xs-12 mt-4 tm-center">
+            <button type="submit" class="btn btn-primary">Изпрати</button>
+          </div>
+        </form>
+      </div>
+      <!-- Footer -->
+      <div class="col-lg-12 tm-bg-color-gray tm-text-color-white tm-font-thin tm-form-footer">
+        <div class="row tm-container-inner">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="tm-footer-info-box">
+              <h4>Катеина и Елина</h4>
+              <address>
+                България, гр.Плевен
+              </address>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="tm-footer-info-box">
+              <p>Проект от училище</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="text-center small tm-copyright-text mb-0">Copyright &copy; 20XX Your Company Name | Designed by <a href="#" class="tm-text-color-gray" target="_parent">XXX</a></p>
+      </div>
+    </div>
+    </div>
+    <!-- load JS -->
+<script src="js/jquery-3.2.1.slim.min.js"></script>         <!-- https://jquery.com/ -->
+<script>
+
+  /* DOM is ready
+  ------------------------------------------------*/
+  $(function(){
+
+    if(renderPage) {
+      $('body').addClass('loaded');
+    }
+
+    $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright
+  });
+
+</script>
+</body>
+</html>
